@@ -2,7 +2,7 @@ import os
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa-student:wonderwoman254@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringaschool:wonderwoman254@localhost/pitch'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
@@ -18,13 +18,13 @@ class Config:
     SIMPLEMDE_USE_CDN = True
 
 class TestConfig:
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa-student:wonderwoman254@localhost/pitch_test'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringaschool:wonderwoman254@localhost/pitch_test'
 
 class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa-student:wonderwoman254@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringaschool:wonderwoman254@localhost/pitch'
 
     DEBUG = True
 

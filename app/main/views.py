@@ -18,10 +18,10 @@ def index():
 
     title = 'PERFECT PITCH!'
     tech = Pitch.query.filter_by(category='tech')
-    funny = Pitch.query.filter_by(category='funny')
+    comic = Pitch.query.filter_by(category='comic')
     life = Pitch.query.filter_by(category='life')
 
-    return render_template('index.html',title = title,tech=tech,funny=funny,life=life)
+    return render_template('index.html',title = title,tech=tech,comic=comic,life=life)
 
 
 @main.route('/life', methods = ['GET','POST'])
@@ -43,8 +43,8 @@ def pitch():
     return render_template('life.html',title = 'life',life=life,form=form)
 
 
-@main.route('/funny', methods = ['GET','POST'])
-def funny():
+@main.route('/comic', methods = ['GET','POST'])
+def comic():
 
     '''
     View pitch page function that returns the pitch details page and its data
@@ -57,9 +57,9 @@ def funny():
         db.session.add(new_pitch)
         db.session.commit()
 
-    funny = Pitch.query.filter_by(category='funny')
+    comic = Pitch.query.filter_by(category='comic')
 
-    return render_template('funny.html',title = 'life',funny=funny,form=form)
+    return render_template('comic.html',title = 'life',comic=comic,form=form)
 
 
 @main.route('/tech', methods = ['GET','POST'])
