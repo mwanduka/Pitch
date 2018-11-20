@@ -20,7 +20,12 @@ class User(UserMixin, db.Model):
     def password(self):
         raise AttributeError('You cannot read the password attribute')
 
-    def set_password(self, password):
+    def save_user(self):
+        db.session.add(self)
+        db.session.commit()
+
+    @password.setter
+    def password(self, password):
         self.password_hash = generate_password_hash(password)
 
     def verify_password(self,password):
