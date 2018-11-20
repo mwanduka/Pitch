@@ -16,7 +16,7 @@ def index():
     View root page function that returns the index page and its data
     '''
 
-    title = 'PERFECT PITCH!'
+    title = 'PITCH!'
     tech = Pitch.query.filter_by(category='tech')
     comic = Pitch.query.filter_by(category='comic')
     life = Pitch.query.filter_by(category='life')
