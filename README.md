@@ -1,9 +1,9 @@
-#ONE MINUTE PITCH
+# ONE MINUTE PITCH
 
-##Link to deployed site
+## Link to deployed site
 https://pitch1-app.herokuapp.com/
 
-##Setup and installations
+## Setup and installations
 Prerequisites
 Python3.6
 Postgres
@@ -11,7 +11,7 @@ virtualenv
 Pip
 
 
-##Technologies used
+## Technologies used
 - Python 3.6
 - HTML
 - Bootstrap 4
@@ -19,6 +19,7 @@ Pip
 - Postgresql
 -Flask framework
 
+## Running and installing the app
 Clone the Repo and checkout into the project folder.
 git clone
 Create and activate the virtual environment
@@ -38,13 +39,13 @@ Run the app
 ./start.sh
 Open localhost:5000
 
-##Known bugs
+## Known bugs
 none yet
 
-##Support and contact details
+## Support and contact details
 Contact mwandukastephen20@gmail.com for further help/support
 
-##License
+## License
 MIT
 
 Copyright (c)2018 Mwanduka Stephen
