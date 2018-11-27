@@ -1,4 +1,4 @@
- ONE MINUTE PITCH
+#ONE MINUTE PITCH
 
 ##Link to deployed site
 https://pitch1-app.herokuapp.com/
@@ -38,13 +38,13 @@ Run the app
 ./start.sh
 Open localhost:5000
 
-Known bugs
+##Known bugs
 none yet
 
-Support and contact details
+##Support and contact details
 Contact mwandukastephen20@gmail.com for further help/support
 
-License
+##License
 MIT
 
 Copyright (c)2018 Mwanduka Stephen
